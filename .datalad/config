@@ -2,4 +2,4 @@
 	id = 943b7eac-0d22-490d-999c-161cf69c4496
 [datalad "containers.midterm-software"]
 	image = .datalad/environments/midterm-software/image
-	cmdexec = singularity exec {img} {cmd}
+	cmdexec = singularity exec -B {{pwd}} {img} {cmd}
